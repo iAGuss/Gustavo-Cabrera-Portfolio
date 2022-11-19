@@ -1,0 +1,120 @@
+.links {
+  display: flex;
+  margin-right: 40px;
+  gap: 25px;
+}
+li {
+  font-size: 25px;
+}
+.guss {
+  position: absolute;
+  left: 0px;
+}
+a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.512);
+}
+.header {
+  width: 100%;
+  max-height: 70px;
+  display: flex;
+
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  background-color: rgba(16, 23, 38, 0.252);
+  color: rgba(255, 255, 255, 0.512);
+}
+.links > li {
+  list-style: none;
+  cursor: pointer;
+  padding: 0px;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+}
+.links > li:hover {
+  color: wheat;
+  transition: 2s;
+  background-color: rgba(0, 0, 0, 0.56);
+  border-radius: 10px;
+}
+span {
+  margin-left: 10px;
+  font-size: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header > span {
+  display: flex;
+  align-items: center;
+}
+.modal-content {
+  border-radius: 10px;
+  height: 700px;
+  position: sticky;
+
+  background-color: #922e23d4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.close {
+  cursor: pointer;
+  left: 20px;
+  position: absolute;
+}
+.contact > h2 {
+  font-size: 50px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form > ul {
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+#textareaa {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.contactame-ul > li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.enviar {
+  width: 100px;
+  background-color: rgba(56, 165, 42, 0.967);
+  height: 40px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.envio-formulario {
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(165, 42, 42);
+  border: none;
+  transition: transform 0.4s;
+}
+.envio-formulario:hover {
+  transform: scale(1.05);
+  background-color: rgba(165, 42, 42, 0.767);
+}
+input {
+  border-radius: 10px;
+}
+textarea {
+  border-radius: 10px;
+}
