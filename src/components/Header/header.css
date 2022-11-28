@@ -3,6 +3,7 @@
   margin-right: 40px;
   gap: 25px;
 }
+
 li {
   font-size: 25px;
 }
@@ -117,4 +118,20 @@ input {
 }
 textarea {
   border-radius: 10px;
+}
+@media (max-width: 905px) {
+  .links li:nth-child(1) {
+    display: none;
+  }
+  .links li:nth-child(2) {
+    display: none;
+  }
+}
+@media (max-width: 415px) {
+  .close {
+    left: 100px;
+  }
+  form > ul {
+    flex-direction: column;
+  }
 }

@@ -73,6 +73,7 @@ span > button > a {
 }
 .skills {
   display: flex;
+  margin-top: -20px;
   flex-direction: column;
   align-items: center;
 }
