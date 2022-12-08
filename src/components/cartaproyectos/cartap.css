@@ -17,6 +17,10 @@
   background-color: rgba(0, 0, 0, 0.381);
   transition: opacity 0.4s;
 }
+.informacion-proyecto > h2 {
+  display: flex;
+  justify-content: center;
+}
 .informacion-proyecto:hover {
   opacity: 1;
 
@@ -58,4 +62,9 @@ li > img {
 }
 a {
   text-decoration: none;
+}
+@media (max-width: 590px) {
+  .informacion-proyecto > h2 {
+    margin: 2px;
+  }
 }

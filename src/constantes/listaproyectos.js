@@ -1,6 +1,6 @@
 const proyectos = [
   {
-    name: "Pokedex con React y base de datos",
+    name: "Pokedex con base de datos",
     imagen:
       "https://sat02pap005files.storage.live.com/y4mb0M3exE8eLjef0xfVbwv-n2MwP0rkJrxvwCHv6s4KRPlGUWfsbokSK0OLYPB8xwvmX3End630buVitqMQmHd67l08_OmdXqHo_mWZSL8NfdsmUzg1p0rjkZZYFgMOnQ3Fk4PvHzutFtc5nkKDLVE__LacyAqDzygZ5rOOU8Ljv1bLAVJHOVPLGoTIemG7A5t?width=1894&height=944&cropmode=none",
 
@@ -8,7 +8,7 @@ const proyectos = [
       "https://cdn.iconscout.com/icon/free/png-256/postgresql-11-1175122.png",
 
     descripcion:
-      "Este proyecto final cuenta con base de datos para poder ingresar y logearte si ya cuentas con usuario ademas de cuando estas logeado cuentas con la posibilidad de poder borrar y crear el pokemon a tu gusto ademas tiene filtrado number/name",
+      "Proyecto final cuenta con base de datos con opcion de login/Register si estas registrado cuentas con la posibilidad de poder borrar y crear el pokemon a tu gusto ademas tiene filtrado number/name",
     GitHub: "https://github.com/iAGuss/Pokedex-Proyecto_Final",
   },
 

@@ -96,7 +96,7 @@ const Header = () => {
                   <li>
                     <label htmlFor="text">Asunto</label>
                     <input
-                      size="50"
+                      size="30"
                       type="text"
                       required="required"
                       id="asunto"
@@ -108,9 +108,9 @@ const Header = () => {
                     <textarea
                       style={{ resize: "none" }}
                       id="msg"
-                      rows="5"
+                      rows="4"
                       required="required"
-                      cols="60"
+                      cols="40"
                       name="user_message"
                     ></textarea>
                   </li>

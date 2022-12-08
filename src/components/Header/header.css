@@ -12,7 +12,6 @@ li {
   left: 0px;
 }
 a {
-  text-decoration: none;
   color: rgba(255, 255, 255, 0.512);
 }
 .header {
@@ -28,14 +27,13 @@ a {
 .links > li {
   list-style: none;
   cursor: pointer;
-  padding: 0px;
-  width: 120px;
-  height: 40px;
   text-align: center;
+  display: flex;
+  align-items: center;
 }
 .links > li:hover {
-  color: wheat;
-  transition: 2s;
+  color: rgb(245, 245, 245);
+  transition: 1s;
   background-color: rgba(0, 0, 0, 0.56);
   border-radius: 10px;
 }
@@ -58,9 +56,13 @@ span {
   align-items: center;
   flex-direction: column;
 }
+.ReactModal__Overlay ReactModal__Overlay--after-open {
+  background-color: black;
+}
 .close {
   cursor: pointer;
   left: 20px;
+  top: 20px;
   position: absolute;
 }
 .contact > h2 {
@@ -82,7 +84,7 @@ form > ul {
 #textareaa {
   display: flex;
   align-items: center;
-  margin-top: 40px;
+  margin-top: 20px;
 }
 .contactame-ul > li {
   display: flex;
@@ -127,11 +129,15 @@ textarea {
     display: none;
   }
 }
-@media (max-width: 415px) {
+@media (max-width: 590px) {
   .close {
-    left: 100px;
+    left: 85px;
+    top: 10px;
   }
   form > ul {
     flex-direction: column;
+  }
+  .contactame-ul {
+    width: 500px;
   }
 }
