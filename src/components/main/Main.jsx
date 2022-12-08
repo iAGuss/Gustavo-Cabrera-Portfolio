@@ -11,10 +11,10 @@ function Main() {
         <p className="Mi-nombre">Hi, I'm Gustavo</p>
 
         <span className="skills">
-          <h2 className="Full-Stack" style={{ fontSize: "30px" }}>
+          <h2 className="Full-Stack" style={{ fontSize: "25px" }}>
             Full stack web Developer Junior
           </h2>
-          <p style={{ fontSize: "15px" }}>
+          <p style={{ fontSize: "20px" }}>
             (React,JavaScript,Node.js,Express.js,PostgreSQL,Testing)
           </p>
         </span>

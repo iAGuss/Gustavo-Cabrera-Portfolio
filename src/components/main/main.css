@@ -62,9 +62,11 @@ span > button > a {
   text-align: center;
   font-size: 70px;
 
+  font-family: "Diplomata SC", cursive;
   margin-bottom: 5px;
 }
 .Mi-nombre {
+  font-family: "Diplomata SC", cursive;
   font-size: 80px;
   margin: 0px;
 }
@@ -72,12 +74,15 @@ span > button > a {
   margin: 0px;
 }
 .skills {
+  font-family: "Anton", sans-serif;
   display: flex;
   margin-top: -20px;
   flex-direction: column;
   align-items: center;
 }
 .about-me {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: 25px;
   display: flex;
   align-items: center;
   flex-direction: column;
