@@ -60,10 +60,19 @@ span > button > a {
 }
 .Full-Stack {
   text-align: center;
-  font-size: 70px;
+  font-size: 30px;
 
   font-family: "Diplomata SC", cursive;
-  margin-bottom: 5px;
+}
+.skills > div {
+  display: flex;
+  align-items: center;
+  height: 40px;
+}
+.Tectologia {
+  font-size: 30px;
+  margin: 0px;
+  color: rgb(42, 114, 165);
 }
 .Mi-nombre {
   font-family: "Diplomata SC", cursive;
@@ -75,6 +84,7 @@ span > button > a {
 }
 .skills {
   font-family: "Anton", sans-serif;
+  font-size: 20px;
   display: flex;
   margin-top: -20px;
   flex-direction: column;
@@ -118,5 +128,20 @@ span > button > a {
     flex-direction: column;
     align-items: center;
     max-width: 50%;
+  }
+  @media (max-width: 630px) {
+    .Mi-nombre {
+      font-size: 40px;
+      padding: 20px 0px 10px;
+    }
+    .Full-Stack {
+      font-size: 20px;
+    }
+    .skills > p {
+      font-size: 15px;
+    }
+    .mi-foto {
+      width: 100%;
+    }
   }
 }
