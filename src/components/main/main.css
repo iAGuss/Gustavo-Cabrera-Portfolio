@@ -61,7 +61,7 @@ span > button > a {
 .Full-Stack {
   text-align: center;
   font-size: 30px;
-
+  margin: 20px;
   font-family: "Diplomata SC", cursive;
 }
 .skills > div {
@@ -70,7 +70,7 @@ span > button > a {
   height: 40px;
 }
 .Tectologia {
-  font-size: 30px;
+  font-size: 40px;
   margin: 0px;
   color: rgb(42, 114, 165);
 }
@@ -100,7 +100,9 @@ span > button > a {
   text-align: center;
   max-width: 600px;
 }
-
+.about-me > p {
+  margin: 10px 0px;
+}
 .Descargar-cv {
   border-radius: 30px;
   width: 140px;

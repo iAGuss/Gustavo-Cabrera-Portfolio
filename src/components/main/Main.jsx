@@ -11,12 +11,12 @@ class Main extends Component {
 
     this.state = {
       words: [
-        "React",
-        "Node",
-        "Express",
+        "JavaScript",
+        "ReactJS",
+        "NodeJS",
+        "ExpressJS",
         "PostgreSQL",
         "Testing",
-        "JavaScript",
       ],
       index: 0,
     };
@@ -27,7 +27,7 @@ class Main extends Component {
       this.setState({
         index: this.state.index + 1,
       });
-    }, 2000);
+    }, 1500);
   }
 
   render() {
@@ -36,7 +36,9 @@ class Main extends Component {
     return (
       <main className="padre-main">
         <div className="texto-precentacion">
-          <h2 className="Mi-nombre">Hi, I'm Gustavo</h2>
+          <h2 className="Mi-nombre">
+            Hola 👋 <br /> soy Gustavo
+          </h2>
           <span className="skills">
             <h2 className="Full-Stack">Full stack web Developer Junior</h2>
             <h3 className="Tectologia">{words[index % words.length]}</h3>
