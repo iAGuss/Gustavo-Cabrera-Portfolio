@@ -46,24 +46,32 @@ span {
   display: flex;
   align-items: center;
 }
+.imagen-contactame {
+  width: 50%;
+}
+.imagen-contactame > img {
+  width: 100%;
+}
 .modal-content {
   border-radius: 10px;
-  height: 700px;
+  height: 100%;
   position: sticky;
 
-  background-color: #922e23d4;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
 }
-.ReactModal__Overlay ReactModal__Overlay--after-open {
-  background-color: black;
+.ReactModal__Overlay--after-open {
+  background-color: rgba(0, 0, 0, 0.51) !important;
 }
 .close {
   cursor: pointer;
   left: 20px;
   top: 20px;
   position: absolute;
+}
+.close:hover {
+  color: red;
 }
 .contact > h2 {
   font-size: 50px;
@@ -72,6 +80,7 @@ span {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 50%;
 }
 form > ul {
   padding: 0px;
@@ -80,6 +89,9 @@ form > ul {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+}
+label {
+  display: block;
 }
 #textareaa {
   display: flex;
@@ -115,29 +127,43 @@ form > ul {
   transform: scale(1.05);
   background-color: rgba(165, 42, 42, 0.767);
 }
-input {
-  border-radius: 10px;
-}
+
 textarea {
   border-radius: 10px;
+}
+@media (max-width: 1300px) {
+  .ReactModal__Content--after-open {
+    height: 60% !important;
+  }
+}
+@media (max-width: 1000px) {
+  .imagen-contactame {
+    display: none;
+  }
+  .ReactModal__Content--after-open {
+    height: 50% !important;
+  }
+  .contact {
+    width: 100%;
+  }
 }
 @media (max-width: 905px) {
   .links li:nth-child(1) {
     display: none;
   }
+  .ReactModal__Content--after-open {
+    width: 95% !important;
+  }
   .links li:nth-child(2) {
     display: none;
   }
 }
+
 @media (max-width: 590px) {
   .close {
-    left: 85px;
     top: 10px;
   }
   form > ul {
     flex-direction: column;
-  }
-  .contactame-ul {
-    width: 500px;
   }
 }

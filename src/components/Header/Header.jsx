@@ -1,13 +1,14 @@
 import React from "react";
 import "./header.css";
-
+import imagenContactame from "../../assets/people-discussing-about-business-in-park.png";
 import Modal from "react-modal";
 import emailjs from "@emailjs/browser";
 import toast from "react-hot-toast";
+
 const customStyles = {
   content: {
-    width: "600px",
-    height: "700px",
+    width: "60%",
+    height: "60%",
     top: "50%",
     left: "50%",
     right: "auto",
@@ -16,6 +17,10 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
     padding: "0",
     borderRadius: "30px",
+
+    "@media (max-width: 600px)": {
+      width: "100%",
+    },
   },
 };
 
@@ -70,8 +75,12 @@ const Header = () => {
             <span className="close" onClick={closeModal}>
               X
             </span>
+            <div className="imagen-contactame">
+              <img src={imagenContactame} alt="" srcset="" />
+            </div>
             <div className="contact">
               <h2>Contactame</h2>
+
               <form className="formulario" onSubmit={sendEmail}>
                 <ul className="contactame-ul">
                   <li>
