@@ -140,9 +140,7 @@ textarea {
   .imagen-contactame {
     display: none;
   }
-  .ReactModal__Content--after-open {
-    height: 50% !important;
-  }
+
   .contact {
     width: 100%;
   }
@@ -160,8 +158,12 @@ textarea {
 }
 
 @media (max-width: 590px) {
+  .ReactModal__Content--after-open {
+    height: 70% !important;
+  }
   .close {
     top: 10px;
+    left: 2px;
   }
   form > ul {
     flex-direction: column;

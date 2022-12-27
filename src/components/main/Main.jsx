@@ -1,10 +1,10 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
+
 import "./main.css";
 import foto from "../../assets/IMG_20220809_164244 (2)-min.jpg";
 import Cv from "../../assets/CV-Gus Full Stack Web Developer.pdf";
 import Linkedin from "../../assets/linkedin.png";
-
+import { TypeAnimation } from "react-type-animation";
 const Main = () => {
   return (
     <main className="padre-main">
@@ -15,32 +15,26 @@ const Main = () => {
         <span className="skills">
           <h2 className="Full-Stack">Full stack web Developer Junior</h2>
           <h3 className="Tectologia">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .start()
-                  .typeString("React")
-
-                  .pauseFor(1000)
-                  .deleteAll()
-
-                  .typeString("Node.js")
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString("PostgreSQL")
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString(" Testing")
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString("Express.js")
-                  .pauseFor(1000)
-                  .deleteAll()
-                  .typeString("JavaScript")
-                  .pauseFor(1000)
-
-                  .start();
-              }}
+            <TypeAnimation
+              // Same String at the start will only be typed once, initially
+              sequence={[
+                "ReactJs",
+                2000,
+                "JavaScript",
+                2000,
+                "Node.Js",
+                2000,
+                "PostgreSQL",
+                2000,
+                "Testing",
+                2000,
+                "Express.Js",
+                2000,
+              ]}
+              speed={5} // Custom Speed from 1-99 - Default Speed: 40
+              style={{ fontSize: "1.5em" }}
+              wrapper="span" // Animation will be rendered as a <span>
+              repeat={Infinity} // Repeat this Animation Sequence infinitely
             />
           </h3>
         </span>
