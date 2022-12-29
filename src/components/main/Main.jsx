@@ -9,7 +9,7 @@ const Main = () => {
   return (
     <main className="padre-main">
       <div className="texto-precentacion">
-        <h2 className="Mi-nombre">
+        <h2 id="about-me" className="Mi-nombre">
           Hola 👋 <br /> soy Gustavo
         </h2>
         <span className="skills">

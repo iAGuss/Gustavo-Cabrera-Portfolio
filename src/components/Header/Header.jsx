@@ -17,10 +17,8 @@ const customStyles = {
     transform: "translate(-50%, -50%)",
     padding: "0",
     borderRadius: "30px",
-
-    "@media (max-width: 600px)": {
-      width: "100%",
-    },
+    background: "#e3e0dc",
+    opacity: "0.95",
   },
 };
 
@@ -56,11 +54,13 @@ const Header = () => {
   return (
     <div className="header">
       <ul className="links">
-        <li>About me</li>
         <li>
-          <a href="#Contenedor-proyecto">Projects</a>
+          <a href="#about-me"> Acerca de mi</a>
         </li>
-        <li onClick={openModal}> Contact</li>
+        <li>
+          <a href="#Contenedor-proyecto">Proyectos</a>
+        </li>
+        <li onClick={openModal}> Contactame</li>
       </ul>
       <span className="guss">Guss</span>
       <div>

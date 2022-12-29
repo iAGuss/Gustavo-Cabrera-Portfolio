@@ -116,6 +116,9 @@ span > button > a {
 }
 
 @media (max-width: 905px) {
+  .Mi-nombre {
+    margin-top: 70px;
+  }
   .padre-main {
     flex-wrap: wrap;
     flex-direction: column;
