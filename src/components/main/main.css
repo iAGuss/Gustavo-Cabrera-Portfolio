@@ -1,7 +1,9 @@
 .padre-main {
   background-color: rgba(0, 0, 0, 0.324);
   width: 100%;
-
+  min-height: 50vw;
+  height: 100%;
+  align-items: center;
   display: flex;
   gap: 15px;
 }
