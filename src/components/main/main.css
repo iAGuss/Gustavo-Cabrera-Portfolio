@@ -118,6 +118,12 @@ span > button > a {
 }
 
 @media (max-width: 905px) {
+  .Full-Stack{
+    font-size: large;
+  }
+  .Mi-nombre {
+    font-size: 50px;
+  }
   .Mi-nombre {
     margin-top: 70px;
   }
