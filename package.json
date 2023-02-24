@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-hot-toast": "^2.4.0",
     "react-modal": "^3.16.1",
+    "react-router-dom": "^6.8.1",
     "react-type-animation": "^2.1.2"
   },
   "devDependencies": {

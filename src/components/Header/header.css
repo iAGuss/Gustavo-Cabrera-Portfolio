@@ -1,174 +1,28 @@
-.links {
-  display: flex;
-  margin-right: 40px;
-  gap: 25px;
-}
-
-li {
-  font-size: 25px;
-}
-.guss {
-  position: absolute;
-  left: 0px;
-}
-a {
-  color: rgba(255, 255, 255, 0.512);
-}
 .header {
-  width: 100%;
-  max-height: 70px;
   display: flex;
-  position: fixed;
-  z-index: 1;
-  flex-direction: row-reverse;
   justify-content: space-between;
-  background-color: rgba(16, 23, 38, 0.252);
-  color: rgba(255, 255, 255, 0.512);
-}
-.links > li {
-  list-style: none;
-  cursor: pointer;
-  text-align: center;
-  display: flex;
   align-items: center;
-}
-.links > li:hover {
-  color: rgb(245, 245, 245);
-  transition: 1s;
-  background-color: rgba(0, 0, 0, 0.56);
-  border-radius: 10px;
-}
-span {
-  margin-left: 10px;
-  font-size: 50px;
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.header > span {
-  display: flex;
-  align-items: center;
-}
-.imagen-contactame {
-  width: 50%;
-}
-.imagen-contactame > img {
-  width: 100%;
-}
-.modal-content {
-  border-radius: 10px;
-  height: 100%;
-  position: sticky;
-
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-.ReactModal__Overlay--after-open {
-  background-color: rgba(0, 0, 0, 0.51) !important;
-}
-.close {
-  cursor: pointer;
-  left: 20px;
-  top: 20px;
-  position: absolute;
-}
-.close:hover {
-  color: red;
-}
-.contact > h2 {
-  font-size: 50px;
-}
-.contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-}
-form > ul {
-  padding: 0px;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-label {
-  display: block;
-}
-#textareaa {
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-}
-.contactame-ul > li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.enviar {
-  width: 100px;
-  background-color: rgba(56, 165, 42, 0.967);
-  height: 40px;
-  border-radius: 10px;
-  cursor: pointer;
-}
-.envio-formulario {
-  width: 100px;
-  height: 40px;
-  border-radius: 20px;
-  background-color: rgb(165, 42, 42);
-  border: none;
-  transition: transform 0.4s;
-}
-.envio-formulario:hover {
-  transform: scale(1.05);
-  background-color: rgba(165, 42, 42, 0.767);
-}
-.ReactModal__Content--after-open {
-  box-shadow: 15px 10px 10px rgb(27, 16, 16);
-}
-textarea {
-  border-radius: 10px;
-}
-@media (max-width: 1300px) {
-  .ReactModal__Content--after-open {
-    height: 60% !important;
-  }
-}
-@media (max-width: 1000px) {
-  .imagen-contactame {
-    display: none;
-  }
-
-  .contact {
-    width: 100%;
-  }
-}
-@media (max-width: 905px) {
-  .links li:nth-child(1) {
-    display: none;
-  }
-  .ReactModal__Content--after-open {
-    width: 95% !important;
-  }
-  .links li:nth-child(2) {
-    display: none;
-  }
+  height: 60px;
+  padding: 0 20px;
+  background-color: #fff;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media (max-width: 590px) {
-  .ReactModal__Content--after-open {
-    height: 70% !important;
-  }
-  .close {
-    top: 10px;
-    left: 2px;
-  }
-  form > ul {
+.logo a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
     flex-direction: column;
+    height: auto;
+    padding: 20px;
+  }
+
+  .logo {
+    margin-bottom: 20px;
   }
 }

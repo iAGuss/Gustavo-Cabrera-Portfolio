@@ -1,24 +1,18 @@
-import { useState } from "react";
 import "./App.css";
-
-import Header from "./components/Header/Header";
-
-import Main from "./components/main/Main";
-import Background from "./components/background/Background";
-import { Toaster } from "react-hot-toast";
-import Proyectos from "./components/Poyectos/Proyectos";
-
-import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Contactame from "./components/contactame/contactame";
+import Principal from "./components/principal";
 
 function App() {
   return (
     <div className="App">
-      <Background />
-      <Header />
-      <Main />
-      <Proyectos />
-    
-      <Toaster />
+      <BrowserRouter basename="/Gustavo-Cabrera">
+        <Routes>
+          <Route path="/" element={<Principal />} />
+          <Route path="/contactame" element={<Contactame />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
