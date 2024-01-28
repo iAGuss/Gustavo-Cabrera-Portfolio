@@ -2,7 +2,7 @@ import React from "react";
 
 import "./main.css";
 import foto from "../../assets/profile.jpg";
-import Cv from "../../assets/CV-Gus Full Stack Web Developer.pdf";
+import Cv from "../../assets/Curriculum-Gustavo-Cabrera .pdf";
 import Linkedin from "../../assets/linkedin.png";
 import { TypeAnimation } from "react-type-animation";
 const Main = () => {

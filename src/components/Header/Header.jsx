@@ -1,14 +1,16 @@
 import React from "react";
 import "./header.css";
-function Header() {
-  <nav>
-    <span>Guss</span>
-    <ul>
-      <li>Sobre mi</li>
-      <li>Proyectos</li>
-      <li>Contactame</li>
-    </ul>
-  </nav>;
+function Header({ openModal }) {
+  return (
+    <nav className="header">
+      <span>Guss</span>
+      <ul className="links">
+        <li>Sobre mi</li>
+        <li>Proyectos</li>
+        <li onClick={openModal}>Contactame</li>
+      </ul>
+    </nav>
+  );
 }
 
 export default Header;
