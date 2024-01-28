@@ -50,7 +50,11 @@ span > button > a {
 
 .mi-foto {
   border-radius: 20px;
-  width: 80%;
+  width: 70%;
+  transition: transform 0.8s;
+}
+.mi-foto:hover {
+  transform: scale(1.05);
 }
 .texto-precentacion {
   font-family: "Kanit", sans-serif;
@@ -118,7 +122,7 @@ span > button > a {
 }
 
 @media (max-width: 905px) {
-  .Full-Stack{
+  .Full-Stack {
     font-size: large;
   }
   .Mi-nombre {

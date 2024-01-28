@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./main.css";
-import foto from "../../assets/profile.jpg";
+import foto from "../../assets/fotoperfil.jpg";
 import Cv from "../../assets/Curriculum-Gustavo-Cabrera .pdf";
 import Linkedin from "../../assets/linkedin.png";
 import { TypeAnimation } from "react-type-animation";

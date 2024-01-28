@@ -22,14 +22,23 @@ span {
   display: flex;
   margin-right: 40px;
   gap: 25px;
+  transition: transform 0.8s;
 }
+
 .links > li {
+  padding: 2px;
   list-style: none;
   cursor: pointer;
   text-align: center;
   display: flex;
   align-items: center;
   font-size: 25px;
+  transition: transform 0.8s;
+}
+.links > li:hover {
+  background-color: rgba(41, 34, 76, 0.341);
+  transform: scale(1.05);
+  border-radius: 5px;
 }
 ul {
   list-style-type: disc;
