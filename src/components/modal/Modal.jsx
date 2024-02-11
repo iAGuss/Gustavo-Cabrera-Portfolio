@@ -3,39 +3,38 @@ import emailjs from "emailjs-com";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./modal.css";
-
-function sendEmail(e) {
-  e.preventDefault();
-
-  const user_name = e.target.user_name.value;
-  const user_mail = e.target.user_mail.value;
-  const user_message = e.target.user_message.value;
-  const notify = () => toast("Mensaje enviado!");
-
-  if (user_name && user_mail && user_message) {
-    emailjs
-      .sendForm(
-        "service_pptd61s",
-        "template_hj4jtdu",
-        e.target,
-        "h6nLxn0VaIHERZe0f"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          notify();
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  } else {
-    alert("Por favor complete todos los campos.");
-  }
-}
-
 function Modal({ closeModal }) {
+  function sendEmail(e) {
+    e.preventDefault();
+
+    const user_name = e.target.user_name.value;
+    const user_mail = e.target.user_mail.value;
+    const user_message = e.target.user_message.value;
+    const notify = () => toast("Mensaje enviado!");
+
+    if (user_name && user_mail && user_message) {
+      emailjs
+        .sendForm(
+          "service_pptd61s",
+          "template_hj4jtdu",
+          e.target,
+          "h6nLxn0VaIHERZe0f"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            notify();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+      e.target.reset();
+    } else {
+      alert("Por favor complete todos los campos.");
+    }
+  }
+
   return (
     <section className="seccion-modal">
       <div className="modal">

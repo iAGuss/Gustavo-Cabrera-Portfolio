@@ -1,5 +1,6 @@
 import React from "react";
 import "./header.css";
+
 function Header({ openModal }) {
   return (
     <nav className="header">
