@@ -2,6 +2,8 @@ import React from "react";
 
 import "./main.css";
 import foto from "../../assets/fotoperfil.jpg";
+import fotocaricaturizada from "../../assets/ME-caricaturizado.jpg";
+
 import Cv from "../../assets/Curriculum-Gustavo-Cabrera .pdf";
 import Linkedin from "../../assets/linkedin.png";
 import { TypeAnimation } from "react-type-animation";
@@ -16,7 +18,6 @@ const Main = () => {
           <h2 className="Full-Stack">Full stack web Developer Junior</h2>
           <h3 className="Tectologia">
             <TypeAnimation
-              // Same String at the start will only be typed once, initially
               sequence={[
                 "ReactJs",
                 2000,
@@ -31,10 +32,9 @@ const Main = () => {
                 "Express.Js",
                 2000,
               ]}
-              speed={5} // Custom Speed from 1-99 - Default Speed: 40
-              style={{ fontSize: "1.5em" }}
-              wrapper="span" // Animation will be rendered as a <span>
-              repeat={Infinity} // Repeat this Animation Sequence infinitely
+              speed={5}
+              wrapper="span"
+              repeat={Infinity}
             />
           </h3>
         </span>
@@ -48,7 +48,7 @@ const Main = () => {
       </div>
 
       <div className="imagen-precentacion">
-        <img className="mi-foto" src={foto} alt="" />
+        <img className="mi-foto" src={fotocaricaturizada} alt="" />
         <span className="link-social">
           <button className="Descargar-cv">
             <a href={Cv} download="Curriculum-Gustavo-Cabrera">

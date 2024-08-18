@@ -21,8 +21,12 @@ function App() {
       <Header openModal={openModal} />
       {modalOpen && <Modal closeModal={closeModal} />}
       <Background />
-      <Main />
-      <Proyectos />
+      <div id="sobre-mi">
+        <Main />
+      </div>
+      <div id="proyectos">
+        <Proyectos />
+      </div>
     </div>
   );
 }

@@ -76,7 +76,7 @@ span > button > a {
   height: 40px;
 }
 .Tectologia {
-  font-size: 40px;
+  font-size: 50px;
   margin: 0px;
   color: rgb(42, 114, 165);
 }
@@ -84,6 +84,7 @@ span > button > a {
   font-family: "Diplomata SC", cursive;
   font-size: 80px;
   margin: 0px;
+  padding-top: 50px;
 }
 .skills > p {
   margin: 0px;
@@ -128,9 +129,10 @@ span > button > a {
   .Mi-nombre {
     font-size: 50px;
   }
-  .Mi-nombre {
-    margin-top: 70px;
+  .Tectologia {
+    font-size: 40px;
   }
+
   .padre-main {
     flex-wrap: wrap;
     flex-direction: column;
@@ -146,7 +148,7 @@ span > button > a {
     align-items: center;
     max-width: 50%;
   }
-  @media (max-width: 630px) {
+  @media (max-width: 600px) {
     .Mi-nombre {
       font-size: 40px;
       padding: 20px 0px 10px;
